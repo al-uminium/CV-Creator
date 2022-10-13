@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './styles/Summary.css'
+import edit from './styles/icons/edit.svg'
 
 export default class Summary extends Component {
     constructor(props) {
@@ -14,7 +15,10 @@ export default class Summary extends Component {
         const { summary } = this.state
         return (
             <div className='Summary'>
-                <h3>Summary</h3>
+                <div className='sectionHeader'>
+                    <h3>Summary</h3>
+                    <img src={edit} alt='edit'></img>
+                </div>
                 <section>
                     {summary}
                 </section>

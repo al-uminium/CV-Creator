@@ -24,10 +24,20 @@ h2 {
 h3 {
     color: rgb(217, 202, 179);
     padding-bottom: 0.2rem;
-    border-bottom: 1.5px solid rgb(172, 172, 172);
+    
 }
 
 section {
     padding-top: 0.5rem;
     text-justify: inter-word;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid rgb(172, 172, 172);
+}
+
+.edit, .add {
+    cursor: pointer;
 }

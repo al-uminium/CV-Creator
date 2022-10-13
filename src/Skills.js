@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import uniqid from 'uniqid'
 import './styles/Skills.css'
+import add from './styles/icons/plus-square.svg'
 
 export default class Skills extends Component {
     constructor(props){
@@ -23,7 +24,10 @@ export default class Skills extends Component {
 
         return (
             <div className='Skills'>
-                <h3>Skills</h3>
+                <div className='sectionHeader'>
+                    <h3>Skills</h3>
+                    <img src={add} alt='add' className='add'></img>
+                </div>
                 <section>
                     <ul>{skillList}</ul>
                 </section>

@@ -1,4 +1,6 @@
 import './styles/Experience.css'
+import edit from './styles/icons/edit.svg'
+import add from './styles/icons/plus-square.svg'
 
 import React, { Component } from 'react'
 
@@ -16,12 +18,19 @@ export default class Experience extends Component {
         }
     }
 
+    addNewExperience(e) {
+        // to add functionality later
+    }
+
     render() {
         const { title, company, jobSummary, startDate, endDate, experienceList } = this.state
     
         return (
             <div className='Experience'>
-                <h3>Experience</h3>
+                <div className='sectionHeader'>
+                    <h3>Experience</h3>
+                    <img src={add} alt='add' className='add'></img>
+                </div>
                 <section>
                     <div className='experienceHeader'>
                         <h4>{title}</h4>
