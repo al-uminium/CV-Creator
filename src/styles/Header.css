@@ -4,6 +4,7 @@
     height: 12rem;
     background-color: rgb(109, 152, 134);
     padding: 1rem;
+    position: relative;
 }
 
 .name {
@@ -21,7 +22,11 @@
 }
 
 p > img {
-    width: 24px;
-    height: 24px;
     padding-right: 0.5rem;
+}
+
+.headerEdit {
+    position: absolute;
+    top: 4%;
+    left: 96%;
 }

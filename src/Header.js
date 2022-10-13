@@ -2,6 +2,7 @@ import { Component } from "react";
 import './styles/Header.css'
 import mail from './styles/icons/mail.svg'
 import phone from './styles/icons/phone.svg'
+import edit from './styles/icons/edit.svg'
 
 export default class Header extends Component {
     constructor(props) {
@@ -12,6 +13,12 @@ export default class Header extends Component {
             contact: '+65 91037589',
             email: 'miro.zorkasch@maelstrom.co',
         }
+
+        this.handleOnClick = this.handleOnClick.bind(this);
+    }
+
+    handleOnClick(e) {
+        console.log('wee')
     }
 
     render() {
@@ -27,6 +34,7 @@ export default class Header extends Component {
                     <img src={phone} alt='email icon'></img>
                     <span>{email}</span>
                 </p>
+                <img src={edit} alt='edit' className="headerEdit edit" onClick={this.handleOnClick}></img>
             </div>
         )
     }
