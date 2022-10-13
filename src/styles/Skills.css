@@ -1,0 +1,13 @@
+.Skills {
+    padding: 1rem;
+}
+
+section > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 5rem;
+}
+
+section > ul > li {
+    margin-left: 2.5rem;
+}

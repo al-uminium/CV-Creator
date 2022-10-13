@@ -1,0 +1,14 @@
+.Experience {
+    display: grid;
+    padding: 1rem;
+}
+
+.experienceHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.experienceCompany {
+    font-style: italic;
+}

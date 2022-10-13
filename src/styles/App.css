@@ -1,0 +1,10 @@
+.Main {
+    margin: 5vw;
+    display: grid;
+}
+.App {
+    display: grid;
+    border: 1px solid rgb(156, 153, 153);
+    border-radius: 5px;
+    box-shadow: 0px 0px 0.5rem rgb(118, 118, 118);
+}
