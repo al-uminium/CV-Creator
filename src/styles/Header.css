@@ -1,10 +1,9 @@
 .FormHeader {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 40px;
     height: 12rem;
     background-color: rgb(109, 152, 134);
     padding: 1rem;
-    position: relative;
 }
 
 .name {
@@ -27,6 +26,5 @@ p > img {
 
 .headerEdit {
     position: absolute;
-    top: 4%;
-    left: 96%;
+    left: 40%;
 }

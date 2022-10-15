@@ -13,13 +13,13 @@ export default class App extends Component {
         return (
             <div className="Main">
                 <Instructions />
-                <form className="App">
+                <div className="App">
                     <Header />
                     <Summary />
                     <Skills />
                     <Experience />
                     <Education />
-                </form>
+                </div>
             </div>
         )
     }
