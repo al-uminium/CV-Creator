@@ -5,6 +5,8 @@ CRA project written with class components :)
 - Relative file paths for images doesn't work with create-react-app. To resolve this, import the image, and pass them as a variable in `src`
 - Conditional rendering - to render a component by making it stateful (e.g., make a state that determines if button is clicked, if true, render component)
 - `this.state.whatever` remembers previous state - assign it to a new variable for it to 'refresh' 
+- ### Changing Parent's State from Child
+- Write a method that updates state in parent, and pass the method to child.
 
 ## Problems faced:
 - To add in future

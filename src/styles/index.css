@@ -56,10 +56,16 @@ img {
 .submitBtn {
     width: 4rem;
     height: 1.5rem;
+    background-color: rgb(60, 102, 84);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    justify-self: end;
+    align-self: end;
 }
 
 .cvForm {
-    background-color: rgb(119, 189, 180);
+    background-color: rgb(226, 240, 238);
     border-radius: 2px;
     box-shadow: 0 0 3px black;
 }

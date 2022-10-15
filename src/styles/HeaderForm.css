@@ -3,18 +3,17 @@
     right:0%;
     top:25%;
     width: 15rem;
-    height: 12rem;
+    height: 16rem;
     padding: 1rem;
-}
-
-.HeaderForm > h4 {
-    padding-bottom: 1rem;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 1rem;
 }
 
 .inputContainer {
     display: grid;
 }
 
-.inputContainer > input[type=text]{
+/* .inputContainer > input[type=text]{
     width: 85%;
-}
+} */

@@ -10,13 +10,22 @@ export default class Header extends Component {
         super(props)
 
         this.state = {
-            name: 'Miro Zorkasch',
-            contact: '+65 91037589',
-            email: 'miro.zorkasch@maelstrom.co',
+            header: {
+                name: 'Miro Zorkasch',
+                contact: '+65 91037589',
+                email: 'miro.zorkasch@maelstrom.co',
+            },
+            name: '',
+            contact: '',
+            email: '',
             editClicked: false
         }
 
         this.handleOnClick = this.handleOnClick.bind(this);
+        this.updateName = this.updateName.bind(this);
+        this.updateContact = this.updateContact.bind(this);
+        this.updateEmail = this.updateEmail.bind(this);
+        this.onHeaderFormSubmit = this.onHeaderFormSubmit.bind(this);
     }
 
     handleOnClick() {
@@ -27,22 +36,59 @@ export default class Header extends Component {
         console.log('click', clickedState)
     }
 
+    updateName(e) {
+        this.setState({
+            name: e.target.value
+        })
+    }
+
+    updateContact(e) {
+        this.setState({
+            contact: e.target.value
+        })
+    }
+
+    updateEmail(e) {
+        this.setState({
+            email: e.target.value
+        })
+    }
+
+    onHeaderFormSubmit(e) {
+        e.preventDefault()
+        this.setState({
+            header: {
+                name: this.state.name,
+                contact: this.state.contact,
+                email: this.state.email,
+            },
+            editClicked: false
+        })
+    }
+
     render() {
-        const { name, contact, email, editClicked } = this.state;
+        const { header, editClicked } = this.state;
         return(
             <div className="FormHeader">
-                <p className="name">{name}</p>
+                <p className="name">{header.name}</p>
                 <p className="contact">
                     <img src={mail} alt='phone icon'></img>
-                    <span>{contact}</span>
+                    <span>{header.contact}</span>
                 </p>
                 <div className="btnContainer">
                     <img src={edit} alt='edit' className="headerEdit edit" onClick={this.handleOnClick} />
-                    {editClicked ? <HeaderForm /> : null}
+                    {editClicked ? <HeaderForm 
+                        updateName={this.updateName} 
+                        updateContact={this.updateContact} 
+                        updateEmail={this.updateEmail}
+                        onHeaderFormSubmit={this.onHeaderFormSubmit}
+                        /> 
+                        : 
+                        null}
                 </div>
                 <p className="email">
                     <img src={phone} alt='email icon'></img>
-                    <span>{email}</span>
+                    <span>{header.email}</span>
                 </p>
             </div>
         )
