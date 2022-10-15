@@ -1,3 +1,4 @@
-.Instructions, .Instructions > *, section > * {
+.Instructions, .Instructions > h1, .Instructions > section > * {
     padding-bottom: 2vw;
+    color: rgb(217, 202, 179);
 }

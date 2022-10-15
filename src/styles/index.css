@@ -6,7 +6,7 @@
 }
 
 html, body {
-    background-color: rgb(246, 246, 246);
+    background-color: rgb(33, 33, 33);
 }
 
 section > p {
@@ -14,11 +14,11 @@ section > p {
 }
 
 h1 {
-    font-size: 3vw;
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 h3 {
