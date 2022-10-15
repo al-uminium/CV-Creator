@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import uniqid from 'uniqid'
 import './styles/Skills.css'
+import del from './styles/icons/x.svg'
 import add from './styles/icons/plus-square.svg'
 
 export default class Skills extends Component {
@@ -8,18 +9,22 @@ export default class Skills extends Component {
         super(props)
 
         this.state = {
-            skills: ['Teamwork', 'Problem Solving Skills', 'Echo', 'God of War', 'God of Magic', 'God of the Land'],
-            skill: ''
+            skillsList: [{skill: 'Teamwork', id: 1}, {skill: 'Problem Solving Skills', id: 2}, {skill: 'Echo', id: 2}, {skill: 'God of War', id: 3}, {skill: 'God of Magic', id: 4}, {skill: 'God of the Land', id:5}],
+            skills: {
+                skill: '',
+                id: uniqid()
+            },
+            addClicked: false,
         }
     }
 
     render() {
-        const { skills, skill } = this.state
+        const { skillsList, skills } = this.state
         function ListItem(props) {
-            return <li>{props.value}</li>
+            return <li>{props.value} <img src={del} alt='delete' className='del' /></li>
         }
-        const skillList = skills.map((skill) => 
-            <ListItem key={uniqid()} value={skill} />
+        const skillList = skillsList.map((skill) => 
+            <ListItem key={skill.id} value={skill.skill} />
         )
 
         return (

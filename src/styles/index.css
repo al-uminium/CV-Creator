@@ -39,8 +39,16 @@ img {
 
 /* ALL COMMON STYLES FOR COMPONENTS GOES HERE */
 
-.edit, .add {
+.edit, .add, .del {
     cursor: pointer;
+}
+
+.del {
+    visibility: hidden;
+}
+
+li > .del :hover {
+    visibility: visible;
 }
 
 .sectionHeader {
