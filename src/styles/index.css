@@ -65,7 +65,18 @@ img {
 }
 
 .cvForm {
-    background-color: rgb(226, 240, 238);
+    background-color: rgba(226, 240, 238, 0.98);
     border-radius: 2px;
     box-shadow: 0 0 3px black;
+    position: absolute;
+    right: 0%;
+    width: 15rem;
+    height: 16rem;
+    padding: 1rem;
+    display: grid;
+    z-index: 2;
+}
+
+.inputContainer {
+    display: grid;
 }

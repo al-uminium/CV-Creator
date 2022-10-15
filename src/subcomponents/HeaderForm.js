@@ -4,9 +4,9 @@ import '../styles/HeaderForm.css'
 export default class HeaderForm extends Component {
     
     render() {
-        const { updateName, updateContact, updateEmail, onHeaderFormSubmit } = this.props
+        const { updateName, updateContact, updateEmail, onFormSubmit } = this.props
         return (
-            <form className='HeaderForm cvForm' onSubmit={onHeaderFormSubmit}>
+            <form className='HeaderForm cvForm' onSubmit={onFormSubmit}>
                 <h4>Contact Information</h4>
                 <div className='inputContainer'>
                     <label for='name'>Name</label>

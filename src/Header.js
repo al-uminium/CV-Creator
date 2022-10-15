@@ -33,7 +33,6 @@ export default class Header extends Component {
         this.setState({
             editClicked: !clickedState
         })
-        console.log('click', clickedState)
     }
 
     updateName(e) {
@@ -81,7 +80,7 @@ export default class Header extends Component {
                         updateName={this.updateName} 
                         updateContact={this.updateContact} 
                         updateEmail={this.updateEmail}
-                        onHeaderFormSubmit={this.onHeaderFormSubmit}
+                        onFormSubmit={this.onHeaderFormSubmit}
                         /> 
                         : 
                         null}
