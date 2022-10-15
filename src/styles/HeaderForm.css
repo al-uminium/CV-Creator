@@ -2,6 +2,19 @@
     position: absolute;
     right:0%;
     top:25%;
-    background-color: aquamarine;
-    width: 12rem;
+    width: 15rem;
+    height: 12rem;
+    padding: 1rem;
+}
+
+.HeaderForm > h4 {
+    padding-bottom: 1rem;
+}
+
+.inputContainer {
+    display: grid;
+}
+
+.inputContainer > input[type=text]{
+    width: 85%;
 }

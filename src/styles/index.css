@@ -6,7 +6,7 @@
 }
 
 html, body {
-    background-color: rgb(246, 246, 246)
+    background-color: rgb(246, 246, 246);
 }
 
 section > p {
@@ -32,21 +32,34 @@ section {
     text-justify: inter-word;
 }
 
+img {
+    width: 24px;
+    height: 24px;
+}
+
+/* ALL COMMON STYLES FOR COMPONENTS GOES HERE */
+
+.edit, .add {
+    cursor: pointer;
+}
+
 .sectionHeader {
     display: flex;
     justify-content: space-between;
     border-bottom: 1.5px solid rgb(172, 172, 172);
 }
 
-.edit, .add {
-    cursor: pointer;
-}
-
-img {
-    width: 24px;
-    height: 24px;
-}
-
 .btnContainer {
     position: relative;
+}
+
+.submitBtn {
+    width: 4rem;
+    height: 1.5rem;
+}
+
+.cvForm {
+    background-color: rgb(119, 189, 180);
+    border-radius: 2px;
+    box-shadow: 0 0 3px black;
 }
