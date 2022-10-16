@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 40px;
     height: 12rem;
     background-color: rgb(109, 152, 134);
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .name {

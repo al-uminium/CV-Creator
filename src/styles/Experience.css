@@ -1,6 +1,6 @@
 .Experience {
     display: grid;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .experienceHeader {
@@ -11,4 +11,21 @@
 
 .experienceCompany {
     font-style: italic;
+}
+
+.experienceSection {
+    position: relative;
+}
+
+.experienceSection:hover {
+    background-color: rgb(226, 224, 224);
+}
+
+.optionsContainer {
+    height: 22px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
 }

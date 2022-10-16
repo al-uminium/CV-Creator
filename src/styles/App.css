@@ -8,4 +8,5 @@
     border-radius: 5px;
     /* box-shadow: 0px 0px 0.5rem rgb(118, 118, 118); */
     background-color: rgb(246, 246, 246);
+    align-items: start;
 }
