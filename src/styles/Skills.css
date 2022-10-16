@@ -5,9 +5,16 @@
 section > ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 5rem;
 }
 
 section > ul > li {
     margin-left: 2.5rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height: 24px;
+}
+
+li:hover {
+    background-color: rgb(226, 224, 224)
 }

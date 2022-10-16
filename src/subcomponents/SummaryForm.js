@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/SummaryForm.css'
+import './styles/SummaryForm.css'
 
 export default class SummaryForm extends Component {
     render() {

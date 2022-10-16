@@ -29,12 +29,12 @@ h3 {
 
 section {
     padding-top: 0.5rem;
-    text-justify: inter-word;
+    text-align: justify;
 }
 
 img {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
 }
 
 /* ALL COMMON STYLES FOR COMPONENTS GOES HERE */
@@ -43,13 +43,6 @@ img {
     cursor: pointer;
 }
 
-.del {
-    visibility: hidden;
-}
-
-li > .del :hover {
-    visibility: visible;
-}
 
 .sectionHeader {
     display: flex;

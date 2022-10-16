@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/HeaderForm.css'
+import './styles/HeaderForm.css'
 
 export default class HeaderForm extends Component {
     
