@@ -9,7 +9,7 @@ html, body {
     background-color: rgb(33, 33, 33);
 }
 
-section > p {
+section, p {
     font-family: 'Archivo', sans-serif;;
 }
 
