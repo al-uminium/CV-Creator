@@ -10,10 +10,10 @@ export default class Instructions extends Component {
         </h1>
         <section>
             <p>
-                To create and customize your own CV, click on the paragraphs/bullet points to edit. To add any new items, click on the plus sign.
-                After you’re done with your customization, click on the “Generate Me” to save this as a PDF.
+                Welcome to the CV Creator! To customize this template to fit your current CV, simply click on the respective symbols to add, edit, or remove. 
+                After you're done with all that, you can generate a PDF by clicking the 'Generate Me!' button at the very bottom. The generated PDF will not have the symbols seen at all, so not to worry!
             </p>
-            <p>Happy Job Hunting!</p>
+            <p>Happy job hunting!</p>
         </section>
       </div>
     )
