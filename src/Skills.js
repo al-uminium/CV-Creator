@@ -32,9 +32,8 @@ export default class Skills extends Component {
     }
 
     handleOnClick() {
-        let currentState = this.state.addClicked
         this.setState({
-            addClicked: !currentState,
+            addClicked: !this.state.addClicked,
         })
     }
 
