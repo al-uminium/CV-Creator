@@ -9,7 +9,7 @@ class ExperienceForm extends Component {
         return (
             <form className='ExperienceForm cvForm' onSubmit={onFormSubmit} >
                 <h4>Job Experience</h4>
-                    <div className='experienceFormHeader'>
+                <div className='experienceFormHeader'>
                     <div className='inputContainer'>
                         <label htmlFor='jobtitle'>Job Title</label>
                         <input type='text' name='jobtitle' className='jobtitle' onChange={updateTitle} required='required'/>
