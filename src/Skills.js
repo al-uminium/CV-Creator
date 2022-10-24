@@ -39,9 +39,7 @@ export default class Skills extends Component {
 
     handleDeleteClick(e) {
         let targetID = e.target.id;
-        console.log(e.target.id)
         let newList = this.state.skillsList.filter(skill => skill.id!==targetID)
-        console.log(newList)
         this.setState({
             skillsList: newList
         })
