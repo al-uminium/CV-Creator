@@ -1,12 +1,29 @@
 .Main {
-    margin: 5vw;
+    margin: 10vw;
     display: grid;
 }
 .App {
     display: grid;
     border: 1px solid rgb(156, 153, 153);
     border-radius: 5px;
-    /* box-shadow: 0px 0px 0.5rem rgb(118, 118, 118); */
     background-color: rgb(246, 246, 246);
     align-items: start;
+    /* margin: 5rem; */
+}
+
+.generate {
+    border: none;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+    background-color: rgb(109, 152, 134);
+    color: rgb(217, 202, 179);
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.generate:hover{
+    background-color: rgb(75, 113, 97);
 }

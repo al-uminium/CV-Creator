@@ -20,6 +20,7 @@ export default class App extends Component {
                     <Experience />
                     <Education />
                 </div>
+                <button type="button" className="generate">Generate Me!</button>
             </div>
         )
     }
