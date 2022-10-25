@@ -22,6 +22,7 @@
     color: rgb(217, 202, 179);
     margin-top: 3rem;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
 .generate:hover{
