@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/CV-Creator/static/css/main.54d1d1dc.css",
-    "main.js": "/CV-Creator/static/js/main.116a3d3b.js",
+    "main.css": "/CV-Creator/static/css/main.0c035c5f.css",
+    "main.js": "/CV-Creator/static/js/main.40e1d7ec.js",
     "index.html": "/CV-Creator/index.html",
     "static/media/phone.svg": "/CV-Creator/static/media/phone.5c587632ac15d676b42647a7cdb0e07b.svg",
     "static/media/plus-square.svg": "/CV-Creator/static/media/plus-square.3c14ded64b550a9f2d406b65a1b63fbb.svg",
     "static/media/edit.svg": "/CV-Creator/static/media/edit.c0ee79500d3a28d7810dc25f2de2adba.svg",
     "static/media/mail.svg": "/CV-Creator/static/media/mail.228b540406a4e7bf13da896872301d66.svg",
     "static/media/x.svg": "/CV-Creator/static/media/x.78e3154412c92bcf90d5bbbb460e03b6.svg",
-    "main.54d1d1dc.css.map": "/CV-Creator/static/css/main.54d1d1dc.css.map",
-    "main.116a3d3b.js.map": "/CV-Creator/static/js/main.116a3d3b.js.map"
+    "main.0c035c5f.css.map": "/CV-Creator/static/css/main.0c035c5f.css.map",
+    "main.40e1d7ec.js.map": "/CV-Creator/static/js/main.40e1d7ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.54d1d1dc.css",
-    "static/js/main.116a3d3b.js"
+    "static/css/main.0c035c5f.css",
+    "static/js/main.40e1d7ec.js"
   ]
 }
