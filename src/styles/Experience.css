@@ -1,6 +1,7 @@
 .Experience {
     display: grid;
     padding: 2rem;
+    width: 528px;
 }
 
 .experienceHeader {

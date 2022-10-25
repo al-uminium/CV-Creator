@@ -4,16 +4,21 @@
     height: 12rem;
     background-color: rgb(109, 152, 134);
     padding: 2rem;
+    width: 528px;
 }
 
 .name {
     grid-row: 1/-3;
     align-self: center;
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 .contact, .email {
     padding-left: 1.5rem;
+}
+
+.contact > span, .email > span {
+    font-size: 0.85rem;
 }
 
 .contact {
