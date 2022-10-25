@@ -17,5 +17,9 @@ In the child component, define a method that has `e.preventDefault()`, and call 
 In the child component, added a `editClicked` state, instead of storing that state in parent. This will ensure that only the component that gets clicked will open up the edit form. 
 For the actual editing, as the parent holds the list of experiences, the method for `onSubmit` resides on the parent, where it is passed down to the child and eventually the grandchild (form). The `onSubmit` method searches the `experienceList` for the ID, changes the targetted object (in a new variable), and updates the state. 
 
+- Generating the PDF file by creating a new window and copying the contents into the new window works, but CSS is not applied (likely due to improper paths, as the new window is not getting the path locally).
+**SOLUTION**
+Maybe try a library. 
+
 ## Live site link:
 https://al-uminium.github.io/CV-Creator/
