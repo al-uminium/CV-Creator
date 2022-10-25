@@ -19,7 +19,12 @@ For the actual editing, as the parent holds the list of experiences, the method 
 
 - Generating the PDF file by creating a new window and copying the contents into the new window works, but CSS is not applied (likely due to improper paths, as the new window is not getting the path locally).
 **SOLUTION**
-Maybe try a library. 
+Maybe try a library.
+
+
+TODOS:
+- [ ] Adjust size of forms
+- [ ] Fix PDF generating functionality
 
 ## Live site link:
 https://al-uminium.github.io/CV-Creator/
