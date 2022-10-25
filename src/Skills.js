@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import uniqid from 'uniqid'
 import './styles/Skills.css'
-import del from './styles/icons/x.svg'
 import add from './styles/icons/plus-square.svg'
 import SkillsForm from './subcomponents/SkillsForm'
 import SkillListItem from './subcomponents/SkillListItem'
