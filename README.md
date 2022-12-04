@@ -1,11 +1,12 @@
 # CV Generator
-CRA project written with class components :)
+CRA project written with class/hook components :)
 
 ## Learning points:
 - Relative file paths for images doesn't work with create-react-app. To resolve this, import the image, and pass them as a variable in `src`
 - Conditional rendering - to render a component by making it stateful (e.g., make a state that determines if button is clicked, if true, render component)
 - CSS selectors doesn't work with inline styling. This can be rectified by making the selector stateful (e.g., `onMouseEnter` -> `hover: true`)
 - Changing parent state from a child component by passing the method from the parent
+- Learnt how to use hook components as well as class components. 
 
 ## Problems faced:
 - Passing down a method from parent to grandchild does not allow `e.preventDefault()` from firing. This is likely due to `e`'s scope being different (?), as moving the method to child will have the expected results.
