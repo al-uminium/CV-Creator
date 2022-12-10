@@ -1,98 +1,81 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import uniqid from 'uniqid'
 import './styles/Skills.css'
 import add from './styles/icons/plus-square.svg'
 import SkillsForm from './subcomponents/SkillsForm'
 import SkillListItem from './subcomponents/SkillListItem'
 
-export default class Skills extends Component {
-    constructor(props){
-        super(props)
+const Skills = () => {
+    const [skillsList, setSkillsList] = useState(
+        [
+            {skill: 'Teamwork', id: '1'}, 
+            {skill: 'Problem Solving Skills', id: '2'}, 
+            {skill: 'Echo', id: '6'}, 
+            {skill: 'God of War', id: '3'}, 
+            {skill: 'God of Magic', id: '4'}, 
+            {skill: 'God of the Land', id: '5'}
+        ],
+    )
 
-        this.state = {
-            skillsList: [
-                {skill: 'Teamwork', id: '1'}, 
-                {skill: 'Problem Solving Skills', id: '2'}, 
-                {skill: 'Echo', id: '6'}, 
-                {skill: 'God of War', id: '3'}, 
-                {skill: 'God of Magic', id: '4'}, 
-                {skill: 'God of the Land', id: '5'}],
-            skills: {
-                skill: '',
-                id: uniqid(),
-            },
-            addClicked: false,
-        }
+    const [skills, setSkills] = useState(
+    {
+        skill: '',
+        id: uniqid()
+    })
 
-        this.handleOnClick = this.handleOnClick.bind(this);
-        this.handleDeleteClick = this.handleDeleteClick.bind(this);
-        this.updateSkill = this.updateSkill.bind(this);
-        this.onSkillFormSubmit = this.onSkillFormSubmit.bind(this);
-    }
-
-    handleOnClick() {
-        this.setState({
-            addClicked: !this.state.addClicked,
-        })
-    }
-
-    handleDeleteClick(e) {
+    const [addClicked, setAddClicked] = useState(false)
+    
+    const handleDeleteClick = (e) => {
         let targetID = e.target.id;
-        let newList = this.state.skillsList.filter(skill => skill.id!==targetID)
-        this.setState({
-            skillsList: newList
-        })
+        let newList = skillsList.filter(skill => skill.id!==targetID)
+        setSkillsList(newList)
     }
 
-    updateSkill(e) {
-        this.setState({
-            skills: {
-                skill: e.target.value,
-                id: this.state.skills.id
-            }
-        })
-    }
-
-    onSkillFormSubmit(e) {
+    const updateSkillsList = (e) => {
         e.preventDefault()
-        this.setState({
-            skillsList: this.state.skillsList.concat(this.state.skills),
-            skills: {
-                skill: '',
-                id: uniqid()
-            },
-            addClicked: false
+        let newSkillsList = skillsList.concat(skills)
+        setSkillsList(newSkillsList)
+        setSkills({
+            skill: '',
+            id: uniqid()
         })
+        setAddClicked(false)
     }
 
-
-    render() {
-        const { skillsList, addClicked } = this.state
-
-        return (
-            <div className='Skills'>
-                <div className='sectionHeader'>
-                    <h3>Skills</h3>
-                    <div className='btnContainer'>
-                       <img src={add} alt='add' className='add' onClick={this.handleOnClick}></img>
-                        {addClicked ? 
-                            <SkillsForm
-                                updateSkill={this.updateSkill}
-                                onFormSubmit={this.onSkillFormSubmit}
-                            />
-                            :
-                            null
-                        }
-                    </div>
-                </div>
-                <section>
-                    <ul>
-                        {skillsList.map(skill => {
-                            return <SkillListItem skill={skill} key={skill.id} handleDeleteClick={this.handleDeleteClick} />
-                        })}
-                    </ul>
-                </section>
-            </div>
+    const handleAddSkill = (e) => {
+        setSkills(
+            {
+                skill: e.target.value,
+                id: skills.id
+            }
         )
     }
+
+    return (
+        <div className='Skills'>
+            <div className='sectionHeader'>
+                <h3>Skills</h3>
+                <div className='btnContainer'>
+                    <img src={add} alt='add' className='add' onClick={() => setAddClicked(!addClicked)}></img>
+                    {addClicked ? 
+                        <SkillsForm
+                            updateSkillsList={updateSkillsList}
+                            handleAddSkill={handleAddSkill}
+                        />
+                        :
+                        null
+                    }
+                </div>
+            </div>
+            <section>
+                <ul>
+                    {skillsList.map(skills => {
+                        return <SkillListItem skill={skills.skill} key={skills.id} id={skills.id} handleDeleteClick={handleDeleteClick} />
+                    })}
+                </ul>
+            </section>
+        </div>
+    )
 }
+
+export default Skills
